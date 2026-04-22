@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logoSvg from '../assets/keepcodein.svg'; // Adjust the path as per your directory structure
@@ -13,11 +14,20 @@ import { GrContactInfo } from "react-icons/gr";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
+function ScrollLock({ open }) {
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+  return null;
+}
+
 export default function Header() {
   return (
     <Disclosure as="nav" className="bg-[#110D2E] w-full z-50 fixed top-0 line-clamp-3">
       {({ open }) => (
         <>
+          <ScrollLock open={open} />
           <div className="mx-auto container px-2 sm:px-4 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between ">
 
@@ -107,7 +117,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="lg:hidden bg-[#080326] mt-3 mx-10 py-4 pb-8 bg-gradient-to-r from-[#FC466B]/10 to-[#3F5EFB]/10 ">
+          <Disclosure.Panel className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-[#080326] overflow-y-auto z-40">
 
             <div class=" absolute inset-0 left-0 top-0  bg-gradient-to-b w-[33%] h-[200px] rounded-full  blur-3xl from-purple-600/60 opacity-50 -z-10 via-purple-500/60 to-purple-400/60 "></div>
 
@@ -123,91 +133,81 @@ export default function Header() {
 
     
 
-              {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
               <Disclosure.Button
                 as="a"
-
+                href="#"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <IoHomeOutline className='' size={25} /></span>
-                  <span className='text-xl '>Home</span>
+                  <span><IoHomeOutline size={25} /></span>
+                  <span className='text-xl'>Home</span>
                 </div>
-
-
               </Disclosure.Button>
 
               <Disclosure.Button
                 as="a"
-
+                href="#services"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <GrServices className='' size={25} /></span>
+                  <span><GrServices size={25} /></span>
                   <span className='text-xl'>Services</span>
                 </div>
-
-
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-
+                href="#case-study"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <AiFillPieChart className='' size={25} /></span>
+                  <span><AiFillPieChart size={25} /></span>
                   <span className='text-xl'>Case Studies</span>
                 </div>
-
-
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-
+                href="#"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <LuCopyPlus className='' size={25} /></span>
+                  <span><LuCopyPlus size={25} /></span>
                   <span className='text-xl'>Careers</span>
                 </div>
-
-
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-
+                href="#"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <MdAutoGraph className='' size={25} /></span>
+                  <span><MdAutoGraph size={25} /></span>
                   <span className='text-xl'>Testimonials</span>
                 </div>
-
-
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-
+                href="#about"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <IoHomeOutline className='' size={25} /></span>
+                  <span><IoHomeOutline size={25} /></span>
                   <span className='text-xl'>About</span>
                 </div>
-
-
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-
+                href="#contact"
                 className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
               >
                 <div className='flex gap-x-3'>
-                  <span >  <GrContactInfo className='' size={25} /></span>
+                  <span><GrContactInfo size={25} /></span>
                   <span className='text-xl'>Contact</span>
                 </div>
-
-
               </Disclosure.Button>
             </div>
             {/* <div className="border-t border-gray-700 pb-3 pt-4">

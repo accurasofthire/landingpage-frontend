@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const ContactUs = () => {
     return (
-        <div id='contact' className='container mx-auto'>
+        <div id='contact' className='container mx-auto scroll-mt-16'>
             <div className='lg:flex lg:px-32 gap-x-10 '>
                 <div className=' flex-grow'>
                     <section className="w-full bg-gradient-to-l  from-[#110D2E]/30  to-[#fc466a4a]/10  rounded-md shadow-md  p-16">
