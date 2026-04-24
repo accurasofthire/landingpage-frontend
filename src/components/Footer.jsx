@@ -87,7 +87,7 @@ const Footer = () => {
                             </div>
                             <div className=" my-4">
                         
-                            <input id="email" type="text" className=" w-full px-4 py-3 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='enter your Email' />
+                            <input id="email" type="text" className=" w-full px-4 py-3 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:ring-0" placeholder='enter your Email' />
                                
                             </div>
                             <ul className="mt-8 flex gap-4 text-white flex-wrap">                                                                                                         

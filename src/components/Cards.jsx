@@ -7,7 +7,7 @@ const Cards = ({img, heading}) => {
         
                             <div className="flex-shrink-0 w-[250px] bg-gradient-to-l bg-[#110D2E]  from-[#110D2E] via-[#110D2E] to-[#fc466a4a] shadow-lg rounded-xl p-3">
                                 <div className="flex flex-col ">
-                                    <div className>
+                                    <div>
 
                                         <div className="relative h-42 w-full mb-3">
                                             <div className="absolute rounded-3xl w-20 border bg-white flex flex-col top-3 right-2 py-[2px] px-1">
@@ -51,7 +51,7 @@ const Cards = ({img, heading}) => {
                                                 </div>
                                             </div>
 
-                                                <hr class="h-px my-5 bg-gradient-to-r  from-gray-500 to-gray-800 border-0 " />
+                                                <hr className="h-px my-5 bg-gradient-to-r  from-gray-500 to-gray-800 border-0 " />
 
 
                                             <div className="flex space-x-2 text-sm font-medium justify-between">
@@ -59,7 +59,7 @@ const Cards = ({img, heading}) => {
                                                     <TiEyeOutline className='h-6 w-6' />
                                                     <span>View Project</span>
                                                 </span>
-                                                <button className="transition ease-in duration-300 inline-flex items-center text-sm font-medium mb-2 md:mb-0 bg-[#6318F1] px-5 py-2 hover:shadow-lg tracking-wider text-white rounded-full  hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-105 ">
+                                                <button className="transition ease-in duration-300 inline-flex items-center text-sm font-medium mb-2 md:mb-0 bg-[#6318F1] px-5 py-2 hover:shadow-lg tracking-wider text-white rounded-full  hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-105">
                                                     <span>View</span>
                                                 </button>
 

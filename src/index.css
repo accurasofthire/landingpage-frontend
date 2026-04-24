@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *:focus, *:focus-visible, *:active {
+  outline: none !important;
+}
+
 body {
     @apply bg-[#050023];
   }

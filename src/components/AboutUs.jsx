@@ -10,7 +10,7 @@ const AboutUs = () => {
           <div className=' my-44 lg:flex justify-center md:mr-20 px-2 sm:mx-20'>
             <div className='lg:min-w-[55%] flex flex-col gap-y-6 md:px-16 '>
                 <div className='inline-flex'>
-                    <h1 class="text-2xl font-bold bg-gradient-to-r from-[#FC466B] to-[#3F5EFB]  text-transparent bg-clip-text">About Us</h1>
+                    <h1 className="text-2xl font-bold bg-gradient-to-r from-[#FC466B] to-[#3F5EFB]  text-transparent bg-clip-text">About Us</h1>
                 </div>
                 <h1 className='text-4xl font-bold text-white'>Empowering Businesses From Cutting Edge Technology</h1>
                     <p className='text-white'>At Keepcodein, innovation is at the heart of everything we do.

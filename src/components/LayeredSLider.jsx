@@ -22,7 +22,7 @@ const LayeredSLider = () => {
       spaceBetween={0}
 
       loop={true}
-    slidesPerView={2}
+      slidesPerView={2}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
