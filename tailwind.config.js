@@ -15,5 +15,17 @@ module.exports = {
       '2xl': '1536px',
     }
   },
-  plugins: [require("tailwind-lines-clamps")],
-}
+  plugins: [
+    require("@tailwindcss/container-queries"),
+    require("tailwindcss-flip"),
+    require("tailwindcss-animate"),
+    require('tailwind-scrollbar-hide'),
+    require('tailwindcss-form-kit'),
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-opentype'),
+    require("tw-elements/plugin.cjs"),
+    require('@formkit/tailwindcss'),
+    require("tailwindcss-radix")(),
+    require('tailwindcss-fluid-type')
+  ],
+};
