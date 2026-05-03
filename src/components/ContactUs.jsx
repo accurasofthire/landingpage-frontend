@@ -30,6 +30,9 @@ const ContactUs = () => {
                                 <div className='col-span-2 '>
                                     <textarea id="username" type="text" className=" w-full px-6 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='Message...' rows={5} />
                                 </div>
+                                <div className='col-span-2 '>
+                                <input type="email" className="form-input rounded-full px-4 py-3 hidden" placeholder='Email' />
+                                </div>
                             </div>
 
                             <div className="flex justify-start mt-6">
