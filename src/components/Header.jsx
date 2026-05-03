@@ -15,7 +15,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-[#110D2E] w-full z-50 fixed top-0 line-clamp-3">
+    <Disclosure as="nav" className="bg-[#110D2E] w-full z-50 fixed top-0 line-clamp-3 kerning">
       {({ open }) => (
         <>
           <div className="mx-auto container px-2 sm:px-4 lg:px-8 ">
