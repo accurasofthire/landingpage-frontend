@@ -17,23 +17,32 @@ const ContactUs = () => {
                         <form>
                             <div className="grid grid-cols-1 gap-6 mt-4 lg:grid-cols-2">
                                 <div className='col-span-2 lg:col-span-1'>
-                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='Full Name' />
+                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:ring-0" placeholder='Full Name' />
                                 </div>
 
                                 <div className='col-span-2 lg:col-span-1'>
-                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='Your Email' />
+                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:ring-0" placeholder='Your Email' />
                                 </div>
 
                                 <div className='col-span-2'>
-                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='Select Subject' />
+                                    <input id="username" type="text" className=" w-full px-4 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:ring-0" placeholder='Select Subject' />
                                 </div>
                                 <div className='col-span-2 '>
-                                    <textarea id="username" type="text" className=" w-full px-6 py-2 mt-2 text-blue-600  rounded-full bg-transparent formBorder-gradient  focus:outline-none focus:ring-0" placeholder='Message...' rows={5} />
+                                    <textarea
+                                        id="username"
+                                        className="w-full px-6 py-3 mt-2 text-blue-600 rounded-xl bg-transparent formBorder-gradient focus:ring-0 resize-none overflow-y-auto max-h-[200px] lg:max-h-[320px]"
+                                        placeholder='Message...'
+                                        rows={4}
+                                        onInput={(e) => {
+                                            e.target.style.height = 'auto';
+                                            e.target.style.height = e.target.scrollHeight + 'px';
+                                        }}
+                                    />
                                 </div>
                             </div>
 
                             <div className="flex justify-start mt-6">
-                                <button className="px-6 py-2 rounded-full bg-[#6318F1] text-white  hover:shadow-lg hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-105 duration-200">Send Messages</button>
+                                <button type="button" className="px-6 py-2 rounded-full bg-[#6318F1] text-white  hover:shadow-lg hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-105 duration-200">Send Messages</button>
                             </div>
                         </form>
                     </section>
