@@ -6,7 +6,7 @@ import img1 from '../assets/aboutimg.png';
 
 const AboutUs = () => {
     return (
-      <div id='about' className='container mx-auto'>
+      <div id='about' className='container mx-auto scroll-mt-16'>
           <div className=' my-44 lg:flex justify-center md:mr-20 px-2 sm:mx-20'>
             <div className='lg:min-w-[55%] flex flex-col gap-y-6 md:px-16 '>
                 <div className='inline-flex'>
