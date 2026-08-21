@@ -7,6 +7,8 @@ import FAQs from "./components/FAQs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Explore from "./components/Explore";
+import CaseStudiesBoard from "./components/CaseStudiesBoard";
+import WhyChooseUs from "./components/WhyChooseUs";
 import HeroSec from "./components/HeroSec";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <MarqueeSection />
       <Services />
       <Explore />
+      <CaseStudiesBoard />
+      <WhyChooseUs />
       <AboutUs/>
       <CustomTech/> 
       <FAQs/>
