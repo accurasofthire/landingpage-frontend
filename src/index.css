@@ -28,6 +28,10 @@ body {
       border-image: linear-gradient(to right, #FC466B, #3F5EFB);
       border-image-slice: 1;
   }
+    .formBorder-gradient-error {
+      border-image: linear-gradient(to right, #fb7185, #f43f5e);
+      border-image-slice: 1;
+  }
 
   body::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -136,6 +140,34 @@ body::-webkit-scrollbar-thumb:hover {
       scale: 0.7;
 
     }
+  }
+
+  @keyframes particle-wave {
+    0%,
+    100% {
+      transform: translateY(6px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes particle-wave-back {
+    0%,
+    100% {
+      transform: translateY(3px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
+  .animate-particle-wave {
+    animation: particle-wave 3s ease-in-out infinite;
+  }
+
+  .animate-particle-wave-back {
+    animation: particle-wave-back 4s ease-in-out infinite;
   }
 
   .animate-cloud {
